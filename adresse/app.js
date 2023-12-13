@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const showAddressBtn = document.querySelector('#showAddressBtn');
     const addressInfo = document.querySelector('#addressInfo');
     const cityInfo = document.querySelector('#cityInfo');
-    const mapContainer = document.querySelector('#map');
 
     showAddressBtn.addEventListener('click', function () {
         if ("geolocation" in navigator) {
