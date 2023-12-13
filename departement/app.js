@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const regionsSelect = document.getElementById('regions');
-    const departementsSelect = document.getElementById('departements');
-    const showCitiesBtn = document.getElementById('showCitiesBtn');
-    const citiesList = document.getElementById('citiesList');
+    const regionsSelect = document.querySelector('#regions');
+    const departementsSelect = document.querySelector('#departements');
+    const showCitiesBtn = document.querySelector('#showCitiesBtn');
+    const citiesList = document.querySelector('#citiesList');
 
     // Au chargement de la page
     fetch('https://geo.api.gouv.fr/regions')

@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const randomQuoteBtn = document.getElementById('randomQuoteBtn');
-    const quoteContent = document.getElementById('quoteContent');
-    const quoteCharacter = document.getElementById('quoteCharacter');
+    const randomQuoteBtn = document.querySelector('#randomQuoteBtn');
+    const quoteContent = document.querySelector('#quoteContent');
+    const quoteCharacter = document.querySelector('#quoteCharacter');
 
     randomQuoteBtn.addEventListener('click', function () {
-        fetch('https://kaamelott-api.vercel.app/api/random')
+        fetch('https://kaamelott.chaudie.re/api/random')
             .then(response => response.json())
             .then(data => {
                 if (data && data.quote && data.character) {
